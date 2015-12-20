@@ -1,0 +1,143 @@
+/*!
+ * bootstrap-vertical-tabs - v1.2.1
+ * https://dbtek.github.io/bootstrap-vertical-tabs
+ * 2014-11-07
+ * Copyright (c) 2014 İsmail Demirbilek
+ * License: MIT
+ I know I copied it but I honestly try to make sence of every line! Iuliia*/
+ body{
+  background-color: #0B3001;
+  font-family: Birch Std;
+  font-size: 30px;
+ }
+.container {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: -10px;
+  margin-right: -10px;
+  background-color: #087F08
+}
+#flyout_menu {
+font-weight: 300;
+width: 100px;
+margin-left: 1px;
+z-index: 5; 
+}
+
+#flyout_menu ul, li {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+#flyout_menu ul li:hover { position: relative; z-index: 599; }
+#flyout_menu ul ul{
+visibility: hidden;
+position: absolute;
+top: 100%;
+left: 0;
+z-index: 598;
+}
+#flyout_menu ul li:hover > ul { visibility: visible; }
+#flyout_menu ul ul { top: 0; left: 100%; }
+#flyout_menu span, #flyout_menu a {
+display: inline-block;
+font-family: Birch Std;
+font-size: 25px;
+text-decoration: none; }
+#flyout_menu li { background: #005555; }
+#flyout_menu li:hover, #flyout_menu li.active { background: #5FD367; }
+#flyout_menu a {
+color: #FFF;
+line-height: 160%;
+padding: 16px 8px 16px 18px;
+width: 100px; }
+#flyout_menu ul ul li {
+background: #006C6C;
+border-bottom: 1px solid #007171; }
+#flyout_menu ul ul li:hover { background: #5FD367; }
+.tabs-left, .tabs-right {
+  border-bottom: none;
+  padding-top: 2px;
+  font-size: 20px;
+}
+.tabs-left {
+  border-right: 1px solid white;
+}
+.tabs-right {
+  border-left: 1px solid #0B3001;
+}
+.tabs-left>li, .tabs-right>li {
+  float: none;
+  margin-bottom: 2px;
+}
+.tabs-left>li {
+  margin-right: -1px;
+}
+.tabs-right>li {
+  margin-left: -1px;
+}
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+  border-bottom-color: white;
+  border-right-color: transparent;
+}
+
+.tabs-right>li.active>a,
+.tabs-right>li.active>a:hover,
+.tabs-right>li.active>a:focus {
+  border-bottom: 1px solid #132B0B;
+  border-left-color: transparent;
+}
+.tabs-left>li>a {
+  border-radius: 4px 0 0 4px;
+  margin-right: 0;
+  display:block;
+}
+.tabs-right>li>a {
+  border-radius: 0 4px 4px 0;
+  margin-right: 0;
+}
+.sideways {
+  margin-top:100px;
+  border: none;
+  position: relative;
+}
+.sideways>li {
+  height: 20px;
+  width: 120px;
+  margin-bottom: 100px;
+}
+.sideways>li>a {
+  border-bottom: 1px solid white;
+  border-right-color: transparent;
+  text-align: center;
+  border-radius: 4px 4px 0px 0px;
+}
+.sideways>li.active>a,
+.sideways>li.active>a:hover,
+.sideways>li.active>a:focus {
+  border-bottom-color: transparent;
+  border-right-color: #ddd;
+  border-left-color: #ddd;
+}
+.sideways.tabs-left {
+  left: -50px;
+}
+.sideways.tabs-right {
+  right: -150px;
+}
+.sideways.tabs-right>li {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.sideways.tabs-left>li {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
